@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .container
+        {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 200px;
+            animation: bouncing 1s linear 0s infinite alternate;
+        }
+        .child
+        {
+            height: 70px;
+            background-color: aqua;
+            width: 100px;
+            border-radius: 50%;
+        }
+        .one
+        {
+            background-color:orange ;
+            animation-duration: 0.1s;
+            animation-delay: 0.5s;
+        }
+        .two
+        {
+            background-color:blue ;
+            animation-duration: 0.7s;
+            animation-delay: 0.0s;
+        }
+        .three
+        {
+            background-color:violet ;
+            animation-duration: 0.7s;
+            animation-delay: 0.9s;
+        }
+        .four
+        {
+            background-color:orangered ;
+            animation-duration: 0.1s;
+            animation-delay: 0.5s;
+        }
+        .five
+        {
+            background-color:white ;
+            animation-duration: 0.4s;
+            animation-delay: 0.1s;
+        }
+        .six
+        {
+            background-color:green;
+            animation-duration: 0.1s;
+            animation-delay: 0.2s;
+        }
+        body
+        {
+            background-color: brown;
+        }
+        @keyframes bouncing{
+            0%
+            {
+                transform: translateY(-100px);
+            }
+            100%
+            {
+                transform: translateY(100px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child one"></div>
+        <div class="child two"></div>
+        <div class="child three"></div>
+        <div class="child four"></div>
+        <div class="child five"></div>
+        <div class="child six"></div>
+        <div class="child one"></div>
+    </div>
+</body>
+</html>

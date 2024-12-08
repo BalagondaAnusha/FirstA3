@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Animations</title>
+    <style>
+          .container
+          {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 200px; 
+            animation: bouncing 1s linear 0s infinite alternate
+          }
+          .child
+          {
+            height: 70px;
+            background-color: blue;
+            width: 100px;
+            border-radius: 50%;
+          }
+          .one
+          {
+            background-color:red;
+            animation-duration: 1s;
+            animation-delay: 1s;
+          }
+          .two
+          {
+            background-color: yellow;
+            animation-duration: 0.5s;
+            animation-delay: 0.9s;
+          }
+          .three
+          {
+            background-color: brown;
+            animation-duration: 0.7s;
+            animation-delay: 0.5s;
+          }
+          .four
+          {
+            background-color: aqua;
+            animation-duration: 0.6s;
+            animation-delay: 0.4s;
+          }
+          .five
+          {
+            background-color:blue;
+            animation-duration: 0.6s;
+            animation-delay: 0.4s;
+          }
+          .six
+          {
+            background-color: green;
+            animation-duration: 0.3s;
+            animation-delay: 0.2s;
+          }
+          .seven
+          {
+            background-color: blueviolet;
+            animation-duration: 0.4s;
+            animation-delay: 0.8s;
+          }
+          body
+          {
+            background-color: black;
+          }
+          @keyframes bouncing
+          {
+            0%
+            {
+              transform: translateY(-100px);
+            }
+            100%
+            {
+              transform: translateY(100px);
+            }
+          }
+    </style>
+</head>
+<body>
+    <div class="child one"></div>
+    <div class="child two"></div>
+    <div class="child three"></div>
+    <div class="child four"></div>
+    <div class="child five"></div>
+    <div class="child six"></div>
+    <div class="child seven"></div>
+</body>
+</html>
